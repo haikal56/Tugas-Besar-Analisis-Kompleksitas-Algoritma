@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partisi Bilangan: Iteratif vs Rekursif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Partisi Bilangan: Iteratif vs Rekursif</h1>
+        <div class="input-section">
+            <label for="number">Masukkan Bilangan (pisahkan dengan koma):</label>
+            <input type="text" id="number" placeholder="Contoh: 4, 5, 6">
+            <button id="run-both">Jalankan Kedua Pendekatan</button>
+        </div>
+
+        <div class="output-section">
+            <h2>Hasil:</h2>
+            <div id="results">
+                <p>Hasil iteratif: <span id="iterative-result">-</span></p>
+                <p>Waktu iteratif: <span id="iterative-time">-</span></p>
+                <p>Hasil rekursif: <span id="recursive-result">-</span></p>
+                <p>Waktu rekursif: <span id="recursive-time">-</span></p>
+            </div>
+
+            <div>
+                <canvas id="executionChart"></canvas>
+            </div>
+
+            <div id="complexity">
+                <!-- Kompleksitas akan dimuat di sini -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
